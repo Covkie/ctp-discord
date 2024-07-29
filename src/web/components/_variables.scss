@@ -301,6 +301,14 @@ html {
 
   --__spoiler-background-color--hidden: #{$surface2};
   --__spoiler-warning-background-color: #{lighten($surface2, 5%)};
+
+  ///New UI Changes
+
+  --primary-230: #{$text};
+
+  --primary-600: #{$mantle};
+  --primary-630: #{$mantle};
+  --primary-660: #{$crust};
 }
 
 ::selection {
