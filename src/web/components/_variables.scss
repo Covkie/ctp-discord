@@ -144,7 +144,7 @@ html {
   --status-green-560: #{$green};
 
   --white-400: #{$text};
-  --white-500: #{$text};
+  --white-500: #{$crust};
 
   --guild-boosting-pink: #{$pink};
   --premium-perk-yellow: #{$yellow};
@@ -304,7 +304,12 @@ html {
 
   --primary-600: #{$mantle};
   --primary-630: #{$mantle};
+  --primary-645: #{$base};
   --primary-660: #{$crust};
+
+  --white: #{$crust};
+
+  --bg-mod-subtle: #{$crust};
 }
 
 ::selection {
