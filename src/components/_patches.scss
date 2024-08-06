@@ -1,0 +1,5 @@
+//Patches for things discord didnt use vars for or vars that clash with catppuccin's palette
+
+[class*="downloadLink_"] {
+  color: #{$text} !important;
+} //Image Open in Browser
