@@ -65,7 +65,7 @@ html {
   --text-brand: #{$brand};
 
   --background-primary: #{$base};
-  --background-secondary: #{$crust};
+  --background-secondary: #{$mantle};
   --background-secondary-alt: #{darken($mantle, 2%)};
   --background-tertiary: #{$crust};
   --background-accent: #{$brand};

@@ -3,3 +3,17 @@
 [class*="downloadLink_"] {
   color: #{$text} !important;
 } //Image Open in Browser
+
+$colors: (
+  //online indicators (not var based GUHHH)
+  $yellow: #f0b232,
+  $red: #f23f43,
+  $green: #23a55a,
+  $surface2: #80848e
+);
+@each $var, $color in $colors {
+  svg [fill="#{$color}"],
+  svg[fill="#{$color}"] {
+    fill: #{$var};
+  }
+}
