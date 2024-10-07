@@ -1,8 +1,29 @@
 //Patches for things discord didnt use vars for or vars that clash with catppuccin's palette
 
-[class*="downloadLink_"] {
+//Dm profile buttons
+[class^="button_"] > [class*="banner_"] {
   color: #{$text} !important;
-} //Image Open in Browser
+}
+//VC controls
+[class*="button_"][class*="buttonColor_"] {
+  --interactive-active: #{$crust} !important;
+}
+// VC controls, Image controls
+div[class^="wrapper_"]:has(> [class^="controlButton_"]),
+div[class^="wrapper_"][class*="modalCarouselWrapper_"] {
+  --white-500: #{$text} !important;
+}
+div[class^="imageWrapper_"] {
+  --white: #{$text};
+  --white-500: #{$text};
+}
+//Chat call icon
+[class^="iconContainer_"] > [class^="icon_"][class*="iconSize_"] {
+  mask-image: url("https://discord.com/assets/617505e363f7f7cf9492.svg") !important;
+  mask-size: 1rem !important;
+  background-color: #a6e3a1 !important;
+  background-image: none !important;
+}
 
 $colors: (
   //online indicators (not var based GUHHH)
