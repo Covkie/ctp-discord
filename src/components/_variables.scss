@@ -68,13 +68,18 @@ html {
   --background-secondary: #{$mantle};
   --background-secondary-alt: #{darken($mantle, 2%)};
   --background-tertiary: #{$crust};
+
   --background-accent: #{$brand};
   --background-floating: #{darken($crust, 2%)};
   --background-nested-floating: #{$mantle};
   --background-mobile-primary: #{$base};
   --background-mobile-secondary: #{$mantle};
-  --bg-base-secondary: #{$mantle};
+
   --bg-surface-raised: #{$base};
+
+  --bg-base-primary: #{$base};
+  --bg-base-secondary: #{$mantle};
+  --bg-base-tertiary: #{$crust};
 
   --home-background: #{$base};
   --chat-background: #{$base};
@@ -137,7 +142,7 @@ html {
 
   --primary-100: #{$subtext1};
   --primary-300: #{$subtext1};
-  --primary-400: #{$subtext1};
+  --primary-400: #{$surface2};
   --primary-dark-700: #{$crust};
   --primary-800: #{$crust};
 
@@ -234,7 +239,7 @@ html {
   --scrollbar-auto-scrollbar-color-thumb: #{$brand};
   --scrollbar-auto-scrollbar-color-track: #{$crust};
 
-  --input-background: #{$crust};
+  --input-background: #{$crust} !important;
   --input-placeholder-text: #{$subtext1};
 
   --logo-primary: #{$text};
@@ -302,6 +307,7 @@ html {
 
   ///New UI Changes
   --menu-item-danger-hover-bg: #{$red};
+  --red-430: #{darken($red, math.div(15%, 2))};
   --red-500: #{darken($red, math.div(15%, 2))};
 
   --primary-130: #{$text};

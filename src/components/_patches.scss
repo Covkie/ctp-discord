@@ -1,16 +1,21 @@
 //Patches for things discord didnt use vars for or vars that clash with catppuccin's palette
 
-//Dm profile buttons
-[class^="button_"] > [class*="banner_"] {
-  color: #{$text} !important;
-}
-//VC controls
-[class*="button_"][class*="buttonColor_"] {
-  --interactive-active: #{$crust} !important;
+[class*="button_"] {
+  &[class*="buttonColor_"] {
+    //VC controls
+    --interactive-active: #{$crust} !important;
+  }
+  > [class*="banner_"] {
+    //Dm profile buttons
+    color: #{$text} !important;
+  }
 }
 // VC controls, Image controls
-div[class^="wrapper_"]:has(> [class^="controlButton_"]),
-div[class^="wrapper_"][class*="modalCarouselWrapper_"] {
+div[class^="bottomControls_"],
+div[class^="wrapper_"][class*="modalCarouselWrapper_"],
+div[class^="layerContainer_"] > [class^="layer_"],
+div[class*="embedVideo_"][class*="embedMedia_"],
+div[class*="tooltipBlack_"] {
   --white-500: #{$text} !important;
 }
 div[class^="imageWrapper_"] {
@@ -23,6 +28,21 @@ div[class^="imageWrapper_"] {
   mask-size: 1rem !important;
   background-color: #a6e3a1 !important;
   background-image: none !important;
+}
+
+//Switches
+[class^="control_"] > [class^="container_"] {
+  background-color: var(--primary-400) !important;
+  [fill*="rgba"] {
+    fill: var(--primary-400) !important;
+  }
+
+  &[class*="checked_"] {
+    background-color: var(--green-360) !important;
+    [fill*="rgba"] {
+      fill: var(--green-360) !important;
+    }
+  }
 }
 
 $colors: (
