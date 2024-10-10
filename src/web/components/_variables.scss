@@ -31,7 +31,7 @@ html {
   --brand-160: #{lighten($brand, math.div(80%, 2))};
   --brand-200: #{lighten($brand, math.div(75%, 2))};
   --brand-230: #{lighten($brand, math.div(70%, 2))};
-  --brand-260: #{lighten($brand, math.div(65%, 2))};
+  --brand-260: #{$brand};
   --brand-300: #{lighten($brand, math.div(60%, 2))};
   --brand-330: #{lighten($brand, math.div(50%, 2))};
   --brand-360: #{lighten($brand, math.div(40%, 2))};
@@ -40,7 +40,7 @@ html {
   --brand-460: #{lighten($brand, math.div(10%, 2))};
   --brand-500: #{$brand};
   --brand-530: #{darken($brand, math.div(10%, 2))};
-  --brand-560: #{darken($brand, math.div(20%, 2))};
+  --brand-560: #{$crust};
   --brand-600: #{darken($brand, math.div(30%, 2))};
   --brand-630: #{darken($brand, math.div(40%, 2))};
   --brand-660: #{darken($brand, math.div(50%, 2))};
