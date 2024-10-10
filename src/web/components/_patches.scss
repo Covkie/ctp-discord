@@ -13,7 +13,7 @@
 // VC controls, Image controls
 div[class^="bottomControls_"],
 div[class^="wrapper_"][class*="modalCarouselWrapper_"],
-div[class^="layerContainer_"] > [class^="layer_"],
+div[class^="layerContainer_"] > [class^="layer_"] [class^="wrapper_"],
 div[class*="embedVideo_"][class*="embedMedia_"],
 div[class*="tooltipBlack_"] {
   --white-500: #{$text} !important;

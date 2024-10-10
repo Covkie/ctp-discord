@@ -307,8 +307,11 @@ html {
 
   ///New UI Changes
   --menu-item-danger-hover-bg: #{$red};
+  --menu-item-danger-active-bg: #{darken($red, math.div(15%, 2))};
   --red-430: #{darken($red, math.div(15%, 2))};
   --red-500: #{darken($red, math.div(15%, 2))};
+
+  --menu-item-default-active-bg: #{darken($brand, math.div(20%, 2))};
 
   --primary-130: #{$text};
   --primary-230: #{$text};
