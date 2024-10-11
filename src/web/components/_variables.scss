@@ -53,21 +53,22 @@ html {
   --brand-900: #{darken($brand, math.div(90%, 2))};
 
   --header-primary: #{$text};
-  --header-secondary: #{$subtext0};
+  --header-secondary: #{$subtext0} !important;
 
-  --text-normal: #{$text};
-  --text-muted: #{$subtext0};
-  --text-link: #{$blue};
+  --text-normal: #{$text} !important;
+  --text-muted: #{$subtext0} !important;
+  --text-link: #{$blue} !important;
   --text-link-low-saturation: #{$sapphire};
-  --text-positive: #{$green};
-  --text-warning: #{$yellow};
+  --text-positive: #{$green} !important;
+  --text-warning: #{$yellow} !important;
   --text-danger: #{$red};
   --text-brand: #{$brand};
+  --text-low-contrast: #{$subtext0};
 
-  --background-primary: #{$base};
-  --background-secondary: #{$mantle};
+  --background-primary: #{$base} !important;
+  --background-secondary: #{$mantle} !important;
   --background-secondary-alt: #{darken($mantle, 2%)};
-  --background-tertiary: #{$crust};
+  --background-tertiary: #{$crust} !important;
 
   --background-accent: #{$brand};
   --background-floating: #{darken($crust, 2%)};
@@ -78,8 +79,8 @@ html {
   --bg-surface-raised: #{$base};
 
   --bg-base-primary: #{$base};
-  --bg-base-secondary: #{$mantle};
-  --bg-base-tertiary: #{$crust};
+  --bg-base-secondary: #{$mantle} !important;
+  --bg-base-tertiary: #{$crust} !important;
 
   --home-background: #{$base};
   --chat-background: #{$base};
@@ -240,6 +241,7 @@ html {
   --scrollbar-auto-scrollbar-color-track: #{$crust};
 
   --input-background: #{$crust} !important;
+  --input-focused-border: #{$brand} !important;
   --input-placeholder-text: #{$subtext1};
 
   --logo-primary: #{$text};
@@ -251,14 +253,14 @@ html {
 
   --background-mentioned: #{adjust-color($yellow, $alpha: -0.9)};
   --background-mentioned-hover: #{adjust-color($yellow, $alpha: -0.92)};
-  --background-message-hover: #{adjust-color($crust, $alpha: -0.75)};
+  --background-message-hover: #{adjust-color($crust, $alpha: -0.75)} !important;
   --background-message-automod: #{adjust-color($rosewater, $alpha: -0.95)};
   --background-message-automod-hover: #{adjust-color($rosewater, $alpha: -0.9)};
   --background-message-highlight: #{adjust-color($brand, $alpha: -0.9)};
   --background-message-highlight-hover: #{adjust-color($brand, $alpha: -0.92)};
 
-  --channels-default: #{darken($subtext0, 5%)};
-  --channel-icon: #{darken($subtext0, 5%)};
+  --channels-default: #{darken($subtext0, 5%)} !important;
+  --channel-icon: #{darken($subtext0, 5%)} !important;
   --channel-text-area-placeholder: #{adjust-color($text, $alpha: -0.5)};
   --channeltextarea-background: #{$mantle};
 
