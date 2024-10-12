@@ -329,6 +329,9 @@ html {
   --bg-mod-subtle: #{$crust};
   --bg-mod-strong: #{$surface0};
   --brand-15a: #{rgba($brand, 0.15)};
+
+  --__temp-input-border: var(--primary-400);
+  --border-strong: var(--primary-400);
 }
 
 ::selection {
