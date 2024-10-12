@@ -78,3 +78,8 @@ div[class*="tagPill_"] {
 div[class^="pinIcon_"] path[fill="white"] {
   fill: #{$base};
 }
+
+//right click menus
+div[class*="menu_"] {
+  background-color: #{$mantle};
+}
