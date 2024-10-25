@@ -82,7 +82,10 @@ span[class*="botTagOP_"] {
   color: var(--white);
 }
 
-//right click menus
-div[class*="menu_"] {
+//settings dropdown selection menus
+div[class^="popout_"] {
   background-color: #{$mantle};
+}
+div[class^="select_"][class*="lookFilled_"] {
+  background-color: #{$base};
 }

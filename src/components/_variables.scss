@@ -332,6 +332,12 @@ html {
 
   --__temp-input-border: var(--primary-400);
   --border-strong: var(--primary-400);
+
+  --background-surface-high: #{$base};
+  --background-surface-higher: #{$mantle};
+  --background-surface-highest: #{$crust};
+
+  --blurple-50: #{$brand};
 }
 
 ::selection {
