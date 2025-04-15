@@ -27,7 +27,8 @@ svg[class^="stepIcon_"],
 svg[class^="activeIcon_"], // Account switcher
 div[class*="tooltipBrand_"],
 [class*="colorBrand_"], [class*="colorStreamerMode_"], [class*="colorSpotify_"], [class*="colorPremium_"], [class*="colorPlayStation_"],
-.interactive:hover {
+.interactive:hover,
+[class*="selectedBrand_"] {
   --white: #{$crust};
   --white-500: #{$crust};
 }
@@ -49,4 +50,8 @@ div[class^="bannerContainer_"] {
   [style*="color: white"] {
     color: #{$crust} !important;
   }
+}
+
+[class*="selectedBrand_"] div[class*="defaultColor_"] {
+  --text-normal: #{$crust};
 }
